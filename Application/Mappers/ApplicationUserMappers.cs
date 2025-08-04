@@ -12,6 +12,7 @@ public static class ApplicationUserMappers
             UserName = applicationUserDto.PersonalId,
             PersonalId = applicationUserDto.PersonalId,
             BirthDate = applicationUserDto.BirthDate,
+            Image = applicationUserDto.Image,
             PhoneInfos = applicationUserDto.PhoneInfos?.ToPhoneInfos().ToList() ?? [],
         };
 
@@ -26,6 +27,7 @@ public static class ApplicationUserMappers
         applicationUser.Gender = editApplicationUserDto.Gender ?? applicationUser.Gender;
         applicationUser.PersonalId = editApplicationUserDto.PersonalId ?? applicationUser.PersonalId;
         applicationUser.BirthDate = editApplicationUserDto.BirthDate ?? applicationUser.BirthDate;
+        applicationUser.Image = editApplicationUserDto.Image ?? applicationUser.Image;
         applicationUser.PhoneInfos =
             editApplicationUserDto.PhoneInfos?.ToPhoneInfos().ToList() ?? applicationUser.PhoneInfos;
 
@@ -41,8 +43,8 @@ public static class ApplicationUserMappers
             Gender = applicationUser.Gender,
             PersonalId = applicationUser.PersonalId,
             BirthDate = applicationUser.BirthDate,
+            Image = applicationUser.Image,
             PhoneInfos = applicationUser.PhoneInfos?.ToPhoneInfosDto() ?? [],
-
         };
 
         return getApplicationUserDto;
@@ -57,7 +59,9 @@ public static class ApplicationUserMappers
             Gender = applicationUser.Gender,
             PersonalId = applicationUser.PersonalId,
             BirthDate = applicationUser.BirthDate,
+            Image = applicationUser.Image,
             PhoneInfos = applicationUser.PhoneInfos?.ToPhoneInfosDto() ?? [],
+            Relationships = fullRelationshipDto
         };
 
         return getApplicationUserDto;

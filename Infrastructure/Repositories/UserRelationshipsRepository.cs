@@ -1,3 +1,9 @@
+using Domain.Entities;
+using Domain.Enums;
+using Domain.IRepositories;
+using Infrastructure.Data;
+using Microsoft.EntityFrameworkCore;
+
 namespace Infrastructure.Repositories;
 
 public class UserRelationshipsRepository : IUserRelationshipsRepository

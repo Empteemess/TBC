@@ -13,6 +13,7 @@ public class EditApplicationUserDto
 
     [DefaultValue("PersonalId")]
     public string? PersonalId { get; set; }
+    public string? Image { get; set; }
 
     public DateTime? BirthDate { get; set; }
 

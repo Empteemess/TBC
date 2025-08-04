@@ -1,3 +1,7 @@
+using Domain.Entities;
+using Domain.IRepositories;
+using Microsoft.AspNetCore.Identity;
+
 namespace Infrastructure.Data;
 
 public class UnitOfWork : IUnitOfWork

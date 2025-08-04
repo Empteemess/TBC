@@ -12,6 +12,7 @@ public static class ServiceConfigurations
 
         services.AddScoped<IUserService, UserService>();
         services.AddScoped<IUserRelationshipsService, UserRelationshipsService>();
+        services.AddScoped<IAwsService, AwsService>();
 
         services.AddScoped<ErrorHandlingMiddleware>();
 

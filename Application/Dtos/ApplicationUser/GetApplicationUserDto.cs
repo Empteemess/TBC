@@ -7,5 +7,7 @@ public class GetApplicationUserDto
     public GenderEnum Gender { get; set; }
     public required string PersonalId { get; set; }
     public required DateTime BirthDate { get; set; }
+    public string? Image { get; set; }
     public IEnumerable<PhoneInfoDto>? PhoneInfos { get; set; }
+    public IEnumerable<FullRelationshipDto>? Relationships { get; set; } = [];
 }

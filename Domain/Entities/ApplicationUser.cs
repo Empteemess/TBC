@@ -10,6 +10,8 @@ public class ApplicationUser : IdentityUser<int>
     public required string PersonalId { get; set; }
     public required DateTime BirthDate { get; set; }
 
+    public string? Image { get; set; }
+
     public ICollection<PhoneInfo>? PhoneInfos { get; set; }
     public ICollection<UserRelationship>? Connections { get; set; } = [];
     public ICollection<UserRelationship>? ConnectedBy { get; set; } = [];

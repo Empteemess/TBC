@@ -1,9 +1,0 @@
-﻿global using Domain.Enums;
-global using Domain.Entities;
-global using Infrastructure.Data;
-global using Microsoft.EntityFrameworkCore;
-global using Infrastructure.DbConfigurations;
-global using Microsoft.AspNetCore.Identity;
-global using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
-global using Domain.IRepositories;
-global using Microsoft.EntityFrameworkCore.Metadata.Builders;

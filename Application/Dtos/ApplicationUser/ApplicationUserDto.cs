@@ -12,7 +12,10 @@ public class ApplicationUserDto
     
     [DefaultValue("PersonalId")]
     public required string PersonalId { get; set; }
+    public required string Image { get; set; }
     public required DateTime BirthDate { get; set; }
+
+
 
     public IEnumerable<PhoneInfoDto>? PhoneInfos { get; set; }
 }

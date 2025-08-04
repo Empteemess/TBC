@@ -11,3 +11,8 @@ global using Application.Dtos.ApplicationUser;
 global using Application.IServices;
 global using System.Net;
 global using Application.Mappers;
+global using Application.Dtos.Storage;
+global using Amazon.Runtime;
+global using Amazon.S3;
+global using Amazon.S3.Model;
+global using Microsoft.Extensions.Configuration;

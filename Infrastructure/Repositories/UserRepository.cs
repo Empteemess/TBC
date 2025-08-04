@@ -1,3 +1,8 @@
+using Domain.Entities;
+using Domain.IRepositories;
+using Infrastructure.Data;
+using Microsoft.EntityFrameworkCore;
+
 namespace Infrastructure.Repositories;
 
 public class UserRepository : IUserRepository
