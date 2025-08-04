@@ -30,3 +30,4 @@ Apply the migrations with:
 
 dotnet ef database update --project Infrastructure --startup-project Web.api
 
+Before adding a user, you should upload the image to the bucket using a pre-signed URL, and then include the given URL in the AddUser request 
