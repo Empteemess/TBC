@@ -1,0 +1,13 @@
+﻿global using System.ComponentModel;
+global using Domain.Enums;
+global using Domain.Entities;
+global using Domain.CustomExceptions;
+global using Domain.IRepositories;
+global using System.ComponentModel;
+global using Application.Dtos.PhoneInfo;
+global using Application.Dtos.UserRelationship;
+global using Application.Dtos.Relationship;
+global using Application.Dtos.ApplicationUser;
+global using Application.IServices;
+global using System.Net;
+global using Application.Mappers;
